@@ -6,7 +6,7 @@
 
 Name:           rust-%{crate}
 Version:        1.6.2
-Release:        1
+Release:        2
 Summary:        Hash table with consistent order and fast iteration
 
 # Upstream license specification: Apache-2.0/MIT
