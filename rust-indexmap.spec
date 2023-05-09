@@ -5,16 +5,15 @@
 %global crate indexmap
 
 Name:           rust-%{crate}
-Version:        1.6.2
-Release:        2
+Version:        1.9.3
+Release:        1
 Summary:        Hash table with consistent order and fast iteration
 
 # Upstream license specification: Apache-2.0/MIT
 License:        ASL 2.0 or MIT
 URL:            https://crates.io/crates/indexmap
 Source:         %{crates_source}
-Patch0:		indexmap-allow-newer-rand.patch
-Patch1:		indexmap-allow-newer-hashbrown.patch
+Patch0:		indexmap-1.9.3-build.patch
 
 ExclusiveArch:  %{rust_arches}
 %if %{__cargo_skip_build}
@@ -47,7 +46,6 @@ which use "%{crate}" crate.
 
 %files          devel
 %license LICENSE-APACHE LICENSE-MIT
-%doc README.rst
 %{cargo_registry}/%{crate}-%{version_no_tilde}/
 
 %package     -n %{name}+default-devel

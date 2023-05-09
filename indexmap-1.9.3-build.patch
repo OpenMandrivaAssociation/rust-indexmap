@@ -1,0 +1,11 @@
+diff -up indexmap-1.9.3/Cargo.toml.omv~ indexmap-1.9.3/Cargo.toml
+--- indexmap-1.9.3/Cargo.toml.omv~	2023-05-09 22:01:52.341084370 +0200
++++ indexmap-1.9.3/Cargo.toml	2023-05-09 22:02:15.132269670 +0200
+@@ -27,6 +27,7 @@ categories = [
+ ]
+ license = "Apache-2.0 OR MIT"
+ repository = "https://github.com/bluss/indexmap"
++exclude = [ "/Cargo.toml.orig" ]
+ 
+ [package.metadata.release]
+ no-dev-version = true
